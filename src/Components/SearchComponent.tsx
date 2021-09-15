@@ -26,7 +26,6 @@ const SearchComponent = (): JSX.Element => {
       .then((userStats) => { 
         setData(userStats.data.items[0]);
         inputRef.current!.value = "";
-        console.log(data)
         setBadges(userStats.data.items[0].badge_counts)
 
         if (userStats.data.items === []) {
